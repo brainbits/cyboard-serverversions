@@ -1,0 +1,19 @@
+<h2 class="widget-title">Server Versions</h2>
+<table class="content">
+    <thead>
+        <tr>
+            <th>Project</th>
+            <th ng-repeat="server in projects[0].servers" class="server-name">
+                {{ server.name }}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="project in projects">
+            <th>{{ project.name }}</th>
+            <td ng-repeat="server in project.servers" ng-class="{'not-available': !project.version || !server.current, 'critical': server.needsMajorUpdate || (server.needsMinorUpdate && server.versionDiff > 1), 'warning': server.needsPatchUpdate || (server.needsMinorUpdate && server.versionDiff <= 1), 'newer': server.newer}">
+                {{ server.current || 'n/a' }}
+            </td>
+        </tr>
+    </tbody>
+</table>

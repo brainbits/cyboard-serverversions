@@ -1,0 +1,44 @@
+h2 {
+    margin: 0 0 1.5vh;
+    font-weight: normal;
+    font-size: 4vh;
+}
+
+table {
+    width: 100%;
+    font-size: 2.5vh;
+    line-height: 1.5em;
+}
+
+thead tr th {
+    border-bottom: 0.1em solid white;
+    padding-bottom: 0.2em;
+    font-weight: 200;
+}
+
+th {
+    text-align: left;
+    font-weight: normal;
+}
+
+th.server-name, td {
+    text-align: right;
+}
+
+tbody tr:first-child td,
+tbody tr:first-child th {
+    padding-top: 0.2em;
+}
+
+.not-available {
+    color: #454545;
+}
+.critical {
+    color: #a40027;
+}
+.warning {
+    color: yellow;
+}
+.newer {
+    color: #7ed321;
+}
