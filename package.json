@@ -1,17 +1,28 @@
 {
-  "name": "cyboard-serverversions",
-  "version": "1.0.0",
-  "description": "Cyboard widget to display currently deployed software versions.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Brainbits GmbH",
-  "license": "MIT",
-  "dependencies": {
-    "lodash": "^3.9.1",
-    "q": "^1.4.1",
-    "request": "^2.55.0",
-    "semver": "^4.3.4"
-  }
+    "name": "cyboard-serverversions",
+    "version": "1.0.0",
+    "description": "Cyboard widget to display currently deployed server versions.",
+    "keywords": ["cyboard", "wallboard", "dashboard", "widget", "versions", "server", "software", "jira"],
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Brainbits GmbH",
+    "contributors": [
+        {
+            "name": "Michael van Engelshoven",
+            "email": "michael@van-engelshoven.de"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/brainbits/cyboard-serverversions"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "lodash": "^3.9.1",
+        "q": "^1.4.1",
+        "request": "^2.55.0",
+        "semver": "^4.3.4"
+    }
 }
