@@ -29,7 +29,7 @@ module.exports = function(widgets, templates, styles, auth) {
                 .then(loadServerVersions)
                 .then(compareVersions)
                 .then(function(projects) {
-                    emitter.emit('data', {projects: projects});
+                    emitter.emit('data', {headline: config.headline || 'Server Versions', projects: projects});
                     setTimeout(go, config.interval || 60000);
                 })
                 .catch(function(error) {
