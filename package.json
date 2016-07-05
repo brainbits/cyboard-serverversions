@@ -1,6 +1,6 @@
 {
     "name": "cyboard-serverversions",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Cyboard widget to display currently deployed server versions.",
     "keywords": ["cyboard", "wallboard", "dashboard", "widget", "versions", "server", "software", "jira"],
     "main": "index.js",
