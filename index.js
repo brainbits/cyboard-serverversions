@@ -111,6 +111,7 @@ function loadServerVersions (projects) {
         return Q.all(project.servers.map(function(server) {
             var deferred = Q.defer();
             request(server.url, function(error, response, body) {
+                if (error) return deferred.reject(error);
                 server.current = semver.parse(body.trim("\n"));
                 deferred.resolve();
             });
