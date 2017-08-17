@@ -99,6 +99,7 @@ function loadJiraProjectVersions (jira, projects) {
                         return memo;
                     }
                 }
+                return memo;
             }, null);
 
             return project;
